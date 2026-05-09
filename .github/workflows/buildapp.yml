@@ -60,7 +60,7 @@ jobs:
 
     steps:
       - name: Checkout Main
-        uses: actions/checkout@v5
+        uses: actions/aws/ec2@main
         with:
           path: main
           ref: ${{ github.event.inputs.commit_id || github.ref }}
